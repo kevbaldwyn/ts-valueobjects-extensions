@@ -1,0 +1,78 @@
+{
+  "name": "ts-valueobjects-extensions",
+  "version": "0.0.0-development",
+  "description": "Additional common value objects to support ts-valueobjects",
+  "keywords": [
+    "typescript",
+    "value objects",
+    "ddd",
+    "domain objects",
+    "money",
+    "value object extension"
+  ],
+  "author": {
+    "name": "Kevin Baldwyn",
+    "url": "https://github.com/kevbaldwyn"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevbaldwyn/ts-valueobjects-extentions.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run lint && tsc",
+    "build:clean": "npm run clean && npm run lint && tsc",
+    "cm": "cz",
+    "changelog": "conventional-changelog -p angular -u",
+    "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "clean": "(rm -r ./coverage || true) && (rm -r ./dist || true)",
+    "clean:all": "npm run clean && (rm -r ./node_modules || true)",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:mutations": "stryker run",
+    "upgrade": "npx npm-check -u",
+    "version": "npm run build && npm run changelog:update",
+    "prepare": "npm test && npm run build",
+    "semantic-release": "semantic-release",
+    "ts-node": "ts-node"
+  },
+  "dependencies": {
+    "js-money": "^0.6.3",
+    "ts-valueobjects": "^2.0.0"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^4.1.2",
+    "@stryker-mutator/jest-runner": "^4.1.2",
+    "@types/jest": "^26.0.16",
+    "@types/node": "^14.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "commitizen": "^4.2.2",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-unicorn": "^23.0.0",
+    "husky": "^3.1.0",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "semantic-release": "^17.3.0",
+    "source-map-support": "^0.5.12",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3",
+    "@types/js-money": "^0.6.1"
+  }
+}
