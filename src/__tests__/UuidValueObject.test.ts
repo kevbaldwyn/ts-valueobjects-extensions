@@ -22,6 +22,12 @@ describe("Test UuidValueObject", () => {
     expect(version(v.toNative())).toBe(4);
   });
 
+  test("generateV1() correctly instantiates v1 uuid", () => {
+    const v = UuidValueObject.generateV1();
+
+    expect(version(v.toNative())).toBe(1);
+  });
+
   test("generateV3() correctly instantiates v3 uuid", () => {
     const v = UuidValueObject.generateV3(
       "name",
