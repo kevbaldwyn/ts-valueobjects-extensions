@@ -5,6 +5,7 @@ describe("Test UuidValueObject", () => {
   test("constructor() should validate uuid", () => {
     expect(() => {
       const v = new UuidValueObject("gjgygkhgkjhg");
+      v.isNull();
     }).toThrowError("Value must be a valid UUID");
   });
 
