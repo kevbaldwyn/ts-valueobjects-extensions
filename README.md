@@ -1,8 +1,11 @@
 # Value Object Extensions
 
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fkevbaldwyn%2Fts-valueobjects-extensions%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/kevbaldwyn/ts-valueobjects-extensions/main)
+![Build](https://github.com/kevbaldwyn/ts-valueobjects-extensions/workflows/Build/badge.svg?branch=master)
 
-[![Coverage Status](https://coveralls.io/repos/github/kevbaldwyn/ts-valueobjects-extensions/badge.svg?branch=main)](https://coveralls.io/github/kevbaldwyn/ts-valueobjects-extensions?branch=main)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fkevbaldwyn%2Fts-valueobjects-extensions%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/kevbaldwyn/ts-valueobjects-extensions/master)
+
+[![Coverage Status](https://coveralls.io/repos/github/kevbaldwyn/ts-valueobjects-extensions/badge.svg?branch=master)](https://coveralls.io/github/kevbaldwyn/ts-valueobjects-extensions?branch=master)
+
 
 This package provides the following common valueobjects for [ts-valueobjects](https://github.com/kevbaldwyn/ts-valueobjects). 
 
