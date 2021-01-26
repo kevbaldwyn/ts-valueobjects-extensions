@@ -8,6 +8,8 @@
     "ddd",
     "domain objects",
     "money",
+    "date time",
+    "uuid",
     "value object extension"
   ],
   "author": {
