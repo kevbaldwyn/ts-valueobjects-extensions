@@ -58,7 +58,7 @@ describe("Test DateTimeUTCValueObject", () => {
     expect(v.toNative()).toStrictEqual(native);
   });
 
-  test("toNative() returns expected serialiation of money", () => {
+  test("toNative() returns expected serialiation of DateTime", () => {
     const v = new DateTimeUTCValueObject({
       date: new Date("2021-01-11T23:16:00.000Z"),
       timezone: "Europe/London"
